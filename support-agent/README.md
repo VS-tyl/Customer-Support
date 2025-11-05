@@ -12,18 +12,6 @@ The agent combines LLM capabilities with structured tool interactions to provide
 - Check the status of existing tickets.
 - Handles multiple tickets and returns concise responses.
 
-## Requirements
-- Python 3.9+
-- Dependencies listed in `requirements.txt`:
-  ````
-  dotenv>=0.9.9
-  langchain>=0.3.27
-  langchain-community>=0.3.31
-  langchain-google-genai>=2.1.12
-  langchain-groq>=0.3.8
-  pendulum>=3.1.0
-  supabase>=2.22.0
-  ````
 ## Installation
 1. Clone the repository:
    ````
@@ -34,19 +22,16 @@ The agent combines LLM capabilities with structured tool interactions to provide
 2. Install dependencies:
 
    ```
-   pip install -r requirements.txt
+   uv install
    ```
-3. Set up the LLM if using GROQ API:
+3. Set up API keys in `.env` file:
 
-   ```bash
-   export GROQ_API_KEY=<your_api_key>
-   ```
 
 ## Usage
 
 Run the agent interactively:
 
-```bash
+```
 python main.py
 ```
 
@@ -65,3 +50,4 @@ python main.py
 ## License
 
 This project is licensed under the MIT License.
+
